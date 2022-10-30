@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Strata by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/academicons/css/academicons.min.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/rob.png" alt="" /></a>
+					<h2 class="align-center">Rob Verheyen</h2>
+					<p class="align-center"><strong>Postdoctoral Researcher</br>
+					University College London</strong></p>
+					<ul class="icons">
+						<li><a href="mailto:r.verheyen@ucl.ac.uk" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/rbvh" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=MRTAm7UAAAAJ&hl=en&oi=ao" class="icon alt ai ai-google-scholar"><span class="label">Scholar</span></a></li>
+						<li><a href="https://inspirehep.net/authors/1777870?ui-citation-summary=true" class="icon alt ai ai-inspire"><span class="label">Scholar</span></a></li>
+						<li><a href="https://arxiv.org/search/?searchtype=author&query=Verheyen%2C+R" class="icon alt ai ai-arxiv"><span class="label">Scholar</span></a></li>
+					</ul>
+				</div>
+			</header>
+		<!-- Main -->
+			<div id="main">
+				<section class="intro-text">
+					<p> I am a theoretical particle physics researcher with an affinity for Monte Carlo simulations and machine learning. 
+						The focus of my research is the simulation of elementary particle collisions at colliders like the <a href="https://www.home.cern/science/accelerators/large-hadron-collider">LHC</a>, with the goal of unravelling the laws of physics at the most fundamental level. </br></br>
+						
+						Currently, I am a postdoctoral researcher at <a href="https://www.hep.ucl.ac.uk/"> University College London</a> / <a href="https://www.physics.ox.ac.uk/research/subdepartment/particle-physics">Oxford University</a> (visitor). 
+						I completed my master and PhD at <a href="https://www.ru.nl/highenergyphysics/"> Radboud University Nijmegen</a>.</p>
+				</section>
+
+				<section>
+					<h1>Research Interest</h1>
+					
+					<h2>Generative Modelling</h2>
+					<p><span class="image left"><img src="images/nf.png" alt="" /></span> Even with the vast computational power of the <a href="https://home.cern/science/computing/grid">CERN worldwide computing grid</a>, the computational cost of Monte Carlo simulations for collisions at the LHC form a major bottleneck. 
+						It is already the leading source of uncertainty in many cases, and this situation will only deteriorate as more data is collected. 
+						At the same time, the deep learning revolution has led to the development of extremely powerful generative modelling techniques, which have the potential to speed up simulations by many orders of magnitude. 
+						My research concerns the development of generative models that are applicable to the simulations of particle physics events, which have a variety of unique properties.
+					</p>
+					<h2>Monte Carlo Generator Development</h2>
+					<p><span class="image right"><img src="images/pythia.png" alt="" /></span> 
+						Before one can turn to generative models for speed, precise control over the theoretical accuracy of the simulations is first required.
+						These simulations are produced by Monte Carlo event generators, complex pieces of software that encode an enormous amounts of theoretical knowledge to produce realistic collision events with extremely high fidelity.
+						I am an author and developer of the <a href="pythia.org">PYTHIA event generator</a>, the most widely-used software in all of particle physics. 
+						I am also a member of the <a href="https://gsalam.web.cern.ch/gsalam/panscales/"> PanScales</a> collaboration, an effort of a group leading theoretical physicists to improve the theoretical accuracy of Monte Carlo event generators.
+					</p>
+					<h2>Anomaly Detection and Event Classification</h2>
+					<p><span class="image left"><img src="images/anomaly.png" alt="" /></span>
+						The ultimate goal of the LHC physics program is to verify the <a href="https://en.wikipedia.org/wiki/Standard_Model">Standard Model</a> of particle physics, and to determine what lies beyond it.
+						The Standard Model has a number of well-understood shortcomings, and the key to solving them may well lie in the vast amounts of data collected at the LHC.
+						Sifting through this data and inferring useful information from it is however a major challenge, but one that deep learning techniques have proven to be extremely useful in.
+						The field of anomaly detection, a type of unsupervised learning, allows us to identify collision events that could potentially point to physics beyond the Standard Model, without assuming knowledge of what shape it would take.	
+						For more focussed searches, event classification with models such as Graph Neural Networks and Transformers lead to much better performance than classical approaches.
+					</p>
+				</section>
+				<section>
+					<h1>Publications</h1>
+					<p>A full list of my publications is available on <a href="https://inspirehep.net/authors/1777870?ui-citation-summary=true">Inspire</a> or <a href="https://scholar.google.com/citations?hl=en&user=MRTAm7UAAAAJ">Google Scholar</a>. Below are a few highlights.</p>
+					<h2>Generative Modelling</h2>
+					<p>
+						<b>Event Generation and Statistical Sampling for Physics with Deep Generative Models and a Density Information Buffer</b> </br>
+						S. Otten, S. Caron, W. de Swart, M. van Beekveld, L. Hendriks, C. van Leeuwen, D. Podareanu, R. Ruiz de Austri, R. Verheyen </br>
+						Nature Communications 2021 [<a href="https://www.nature.com/articles/s41467-021-22616-z">journal</a>] [<a href="https://arxiv.org/abs/1901.00875">arXiv</a>]
+					</p>
+					<p>
+						<b>Phase Space Sampling and Inference from Weighted Events with Autoregressive Flows</b></br>
+						B. Stienen, R. Verheyen</br>
+						SciPost Physics 2021 [<a href="https://scipost.org/10.21468/SciPostPhys.10.2.038">journal</a>] [<a href="https://arxiv.org/pdf/2011.13445.pdf">arXiv</a>] [<a href="https://github.com/rbvh/PhaseSpaceAutoregressiveFlow">code</a>]
+					</p>
+					<p>
+						<b>Event Generation and Density Estimation with Surjective Normalizing Flows</b></br>
+						R. Verheyen</br>
+						SciPost Physics 2022 [<a href="https://scipost.org/10.21468/SciPostPhys.13.3.047">journal</a>] [<a href="https://arxiv.org/abs/2205.01697">arXiv</a>] [<a href="https://github.com/rbvh/surflows">code</a>]
+					</p>
+					<h2>Monte Carlo Generator Development</h2>
+					<p>
+						<b>A Comprehensive Guide to the Physics and Usage of PYTHIA 8.3</b></br>
+						C. Bierlich, S. Chakraborty, N. Desai, L. Gellersen, I. Helenius, P. Ilten, L. Lönnblad, S. Mrenna, S. Prestel, C. Preuss, T. Sjöstrand, P. Skands, M. Utheim, R. Verheyen <br>
+						Scipost Physics Codebases 2022 [<a href="https://arxiv.org/abs/2203.11601">arXiv</a>] [<a href="pythia.org">code</a>]
+					</p>
+					<p>
+						<b>PanScales Parton Showers for Hadron Collisions: Formulation and Fixed-order studies</b></br>
+						M. van Beekveld, S. Ferrario Ravasio, G. Salam, A. Soto-Ontoso, G. Soyez, R. Verheyen</br>
+						Journal of High Energy Physics 2022 [<a href="https://arxiv.org/abs/2205.02237">arXiv</a>]
+					</p>
+					<p>
+						<b>Collinear Electroweak Radiation in Antenna Parton Showers</b></br>
+						R. Kleiss, R. Verheyen</br>
+						The European Physical Journal 2020 [<a href="https://link.springer.com/article/10.1140/epjc/s10052-020-08510-w">journal</a>] [<a href="https://arxiv.org/pdf/2002.09248.pdf">arXiv</a>] [<a href="pythia.org">code</a>]
+					</p>
+					<h2>Anomaly Detection and Event Classification</h2>
+					<p>
+						<b>Rare and Different: Anomaly Scores from a combination of Likelihood and Out-of-distribution Models to Detect New Physics at the LHC</b></br>
+						S. Caron, L. Hendriks, R. Verheyen</br>
+						SciPost Physics 2022 [<a href="https://scipost.org/10.21468/SciPostPhys.12.2.077">journal</a>] [<a href="https://arxiv.org/pdf/2106.10164.pdf">arXiv</a>] [<a href="https://github.com/l-hendriks/combined-anomaly-detection-code">code</a>]
+					</p>
+					<p>
+						<b>The Dark Machines Anomaly Score Challenge: Benchmark Data and Model Independent Event Classification for the Large Hadron Collider</b></br>
+						T. Aarrestad, M. van Beekveld, M. Bona, A. Boveia, S. Caron, J.Davies, A. De Simone, C. Doglioni, J. M. Duarte, A. Farbin, H. Gupta, L. Hendriks, L. Heinrich, J. Howarth, P. Jawahar, A. Jueid, J. Lastow, A. Leinweber, J. Mamuzic, E. Merényi, A. Morandini, P. Moskvitina, C. Nellist, J.Ngadiuba, B. Ostdiek, M. Pierini, B. Ravina, R. Ruiz de Austri, S. Sekmen, M. Touranakou, M. Vaškevičiūte, R. Vilalta, J. R. Vlimant, R. Verheyen, M. White, E. Wulff, E. Wallin, K. A. Wozniak, Z. Zhang</br>
+						SciPost Physics 2022 [<a href="https://scipost.org/10.21468/SciPostPhys.12.1.043">journal</a>] [<a href="https://arxiv.org/pdf/2105.14027.pdf">arXiv</a>] [<a href="https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge">code</a>]
+					</p>
+
+		<!-- Footer -->
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
