@@ -1,0 +1,248 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Rob Verheyen} \\[7.5pt]
+\href{https://github.com/rbvh}{\raisebox{-0.05\height}\faGithub\ rbvh} \ $|$ \ 
+\href{https://www.linkedin.com/in/rob-verheyen-55955a97/}{\raisebox{-0.05\height}\faLinkedin\ rob-verheyen} \ $|$ \ 
+\href{https://rbvh.github.io/}{\raisebox{-0.05\height}\faGlobe \ rbvh.github.io} \ $|$ \ 
+\href{mailto:r.verheyen@ucl.ac.uk}{\raisebox{-0.05\height}\faEnvelope \ r.verheyen@ucl.ac.uk} \ $|$ \ 
+\href{tel:+31 683095896}{\raisebox{-0.05\height}\faMobile \ +31 683095896} \\ [2pt]
+Oxford, United Kingdom \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Research Interests}
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Postdoctoral researcher} Theoretical high energy physics & \hfill Oct 2019 - present \\[3.75pt]
+\underline{University College London / University of Oxford (visitor)}, United Kingdom \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[-] Member of the \href{https://https://gsalam.web.cern.ch/gsalam/panscales/}{PanScales} collaboration, a project involving leading theorists that aim to improve theoretical accuracy and understanding of Monte Carlo event generators.
+        \item[-] Research on generative machine learning models, anomaly detection and event classification with models such as normalizing flows, graph neural networks and transformers.
+    \end{itemize}
+\end{minipage}} 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l  r@{}}	
+\textbf{PhD} Theoretical high energy physics & \hfill 2015 - 2019 \\ 
+\underline{Radboud University Nijmegen}, the Netherlands \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[b]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[-] Author and developer in the \href{https://pythia.org}{PYTHIA} collaboration, the leading particle physics Monte Carlo event generator and the most widely-used and cited software in the field.
+        \item[-] Reserach on generative machine learning models for particle collision events, which was a brand new and emerging field at the time.
+        \item[-] Strong emphasis on Monte Carlo algorithms and theoretical calculations used for the simulation of highly-energetic radiative corrections in scattering events.
+    \end{itemize}
+\end{minipage}} \\ [5pt]
+
+\textbf{MsC} Theoretical high energy physics (\emph{Summa cum laude/with highest honors})& \hfill 2013 - 2015 \\
+\underline{Radboud University Nijmegen}, the Netherlands \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[b]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[-] Research with focus on numerical techniques in calculations for supersymmetric field theory. 
+    \end{itemize}
+\end{minipage}} \\ [5pt]
+
+\textbf{BsC} Physics and Astronomy (\emph{Cum laude/with honors}) & \hfill 2009 - 2013 \\
+\underline{Radboud University Nijmegen}, the Netherlands \\[3.75pt]
+\end{tabularx}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Selected publications}
+Full list of 24 publications on \href{https://inspirehep.net/authors/1777870?ui-citation-summary=true}{Inspire} or \href{https://scholar.google.com/citations?user=MRTAm7UAAAAJ&hl=en&oi=ao}{Google Scholar}
+
+\underline{\large{Machine learning}} \\ [5pt]
+\textbf{Event Generation and Density Estimation with Surjective Normalizing Flows} \\
+R. Verheyen, 
+\href{https://scipost.org/10.21468/SciPostPhys.13.3.047}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/abs/2205.01697}{arXiv}] [\href{https://github.com/rbvh/surflows}{code}]
+
+\textbf{Rare and Different: Anomaly Scores from a Combination of Likelihood and Out-of-distribution Models to Detect New Physics at the LHC} \\
+S. Caron, L. Hendriks, R. Verheyen,
+\href{https://scipost.org/10.21468/SciPostPhys.12.1.043}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/pdf/2105.14027.pdf}{arXiv}] [\href{https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge}{code}]
+
+\textbf{Event Generation and Statistical Sampling for Physics with Deep Generative Models and a Density Information Buffer} \\
+S. Otten, S. Caron, W. de Swart, M. van Beekveld, L. Hendriks, C. van Leeuwen, D. Podareanu, R. Ruiz de Austri, R. Verheyen, 
+\href{https://www.nature.com/articles/s41467-021-22616-z}{\underline{Nature Communications 2021}} [\href{https://arxiv.org/abs/1901.00875}{arXiv}]
+
+\textbf{Phase Space Sampling and Inference from Weighted Events with Autoregressive Flows} \\
+B. Stienen, R. Verheyen, 
+\href{https://scipost.org/10.21468/SciPostPhys.10.2.038}{\underline{SciPost Physics 2021}} [\href{https://arxiv.org/pdf/2011.13445.pdf}{arXiv}] [\href{https://github.com/rbvh/PhaseSpaceAutoregressiveFlow}{code}]
+
+
+
+\underline{\large{Monte Carlo generator development}} \\[5pt]
+\textbf{A Comprehensive Guide to the Physics and Usage of PYTHIA 8.3} \\
+C. Bierlich, S. Chakraborty, N. Desai, L. Gellersen, I. Helenius, P. Ilten, L. Lönnblad, S. Mrenna, S. Prestel, C. Preuss, T. Sjöstrand, P. Skands, M. Utheim, R. Verheyen, \\
+\href{https://arxiv.org/abs/2203.11601}{\underline{Scipost Physics Codebases 2022}} [\href{https://arxiv.org/abs/2203.11601}{arXiv}] [\href{https://pythia.org}{code}]
+
+\textbf{PanScales Parton Showers for Hadron Collisions: Formulation and Fixed-order studies} \\
+M. van Beekveld, S. Ferrario Ravasio, G. Salam, A. Soto-Ontoso, G. Soyez, R. Verheyen, \\
+\href{https://arxiv.org/abs/2205.02237}{\underline{Journal of High Energy Physics 2022}} [\href{https://arxiv.org/abs/2205.02237}{arXiv}]
+
+\textbf{Spin Correlations in Final-state Parton Showers and Jet Observables} \\
+A. Karlberg, G. Salam, L. Scyboz, R. Verheyen, \\
+\href{https://link.springer.com/article/10.1140/epjc/s10052-021-09378-0}{\underline{The European Physical Journal 2021}} [\href{https://arxiv.org/pdf/2103.16526.pdf}{arXiv}]
+
+\textbf{Competing Sudakov Veto Algorithms} \\
+R. Kleiss, R. Verheyen,
+\href{https://link.springer.com/article/10.1140/epjc/s10052-016-4231-5}{\underline{The European Physical Journal 2016}} [\href{https://arxiv.org/pdf/1605.09246.pdf}{arXiv}][\href{https://github.com/rbvh/Veto-Algorithm-Toy-Shower}{code}]
+
+
+
+% \textbf{The Dark Machines Anomaly Score Challenge: Benchmark Data and Model Independent Event Classification for the Large Hadron Collider} \\
+% T. Aarrestad, M. van Beekveld, M. Bona, A. Boveia, S. Caron, J.Davies, A. De Simone, C. Doglioni, J. M. Duarte, A. Farbin, H. Gupta, L. Hendriks, L. Heinrich, J. Howarth, P. Jawahar, A. Jueid, J. Lastow, A. Leinweber, J. Mamuzic, E. Merényi, A. Morandini, P. Moskvitina, C. Nellist, J.Ngadiuba, B. Ostdiek, M. Pierini, B. Ravina, R. Ruiz de Austri, S. Sekmen, M. Touranakou, M. Vaškevičiūte, R. Vilalta, J. R. Vlimant, R. Verheyen, M. White, E. Wulff, E. Wallin, K. A. Wozniak, Z. Zhang, \\
+% \href{https://scipost.org/10.21468/SciPostPhys.12.1.043}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/pdf/2105.14027.pdf}{arXiv}] [\href{https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge}{code}]
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
+Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
