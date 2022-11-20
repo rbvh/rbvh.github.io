@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -130,7 +130,7 @@ Oxford, United Kingdom \\
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Research Interests}
+\section{Knowledge \& Research Interests}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
     \item[-] \textbf{Machine learning in particle physics} \\ 
     Anomaly detection and event classification with graph neural networks and transformers
@@ -168,7 +168,6 @@ Oxford, United Kingdom \\
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
         \item[-] Current author and developer in the \href{https://pythia.org}{PYTHIA} collaboration, the leading particle physics \\ Monte Carlo event generator and the most widely-used and cited software in the field.
         \item[-] Research on deep generative models for particle collision events, a new and emerging \\ field at the time.
-        \item[-] Strong emphasis on Monte Carlo algorithms and theoretical calculations used for \\ the simulation of highly-energetic particle collisions.
     \end{itemize}
 \end{minipage}} \\ [5pt]
 
@@ -186,16 +185,30 @@ Oxford, United Kingdom \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
+%	OTHER PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Selected projects}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em]
+    % \setlength\itemsep{-.5em}
+    \item[-] Autoregressive normalizing flows for sampling particle physics collision events with weighted training (with B. Stienen) [\href{https://github.com/rbvh/PhaseSpaceAutoregressiveFlow}{code}].
+    \item[-] Surjective transforms in normalizing flows for sampling and anomaly detection in particle physics, with the goal of handling permutation invariance, varying number of objects and mixed discrete-continuous features [\href{https://github.com/rbvh/surflows}{code}].
+    \item[-] Development of efficient Monte Carlo algorithms for branching processes in particle physics [\href{https://github.com/rbvh/Veto-Algorithm-Toy-Shower}{code}].
+    \item[-] Contributed to the development of an ML algorithm for fast diagnosis of SARS-CoV-2, \\ led to publication in \href{https://www.degruyter.com/document/doi/10.1515/cclm-2020-0593/html}{Clinical Chemistry and Laboratory Medicine}.
+    \item[-] Graph generative models for particle physics with F. Dreyer (ongoing).
+    \item[-] Normalizing flows for Monte Carlo integration (ongoing).
+\end{itemize}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{Selected publications}
 Full list of 24 publications on \href{https://inspirehep.net/authors/1777870?ui-citation-summary=true}{Inspire} or \href{https://scholar.google.com/citations?user=MRTAm7UAAAAJ&hl=en&oi=ao}{Google Scholar}
 
-\underline{\Large{Machine learning}} \\ [5pt]
 \textbf{Climbing four tops with graph networks, transformers and pairwise features} \\
 L. Builtjes, S. Caron, P. Moskvitina, C. Nellist, R. Ruiz de Austri, \underline{R. Verheyen}, Z. Zhang,
 [\href{https://arxiv.org/pdf/2211.05143.pdf}{arXiv}]
-
 
 \textbf{Event Generation and Density Estimation with Surjective Normalizing Flows} \\
 \underline{R. Verheyen}, 
@@ -205,6 +218,14 @@ L. Builtjes, S. Caron, P. Moskvitina, C. Nellist, R. Ruiz de Austri, \underline{
 S. Caron, L. Hendriks, \underline{R. Verheyen},
 \href{https://scipost.org/10.21468/SciPostPhys.12.1.043}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/pdf/2105.14027.pdf}{arXiv}] [\href{https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge}{code}]
 
+\textbf{The Dark Machines Anomaly Score Challenge: Benchmark Data and Model Independent Event Classification for the Large Hadron Collider} \\
+T. Aarrestad et al. \\
+\href{https://scipost.org/10.21468/SciPostPhys.12.1.043}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/pdf/2105.14027.pdf}{arXiv}] [\href{https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge}{code}]
+
+\textbf{A Comprehensive Guide to the Physics and Usage of PYTHIA 8.3} \\
+C. Bierlich, S. Chakraborty, N. Desai, L. Gellersen, I. Helenius, P. Ilten, L. Lönnblad, S. Mrenna, S. Prestel, C. Preuss, T. Sjöstrand, P. Skands, M. Utheim, \underline{R. Verheyen}, \\
+\href{https://scipost.org/SciPostPhysCodeb.8-r8.3}{\underline{SciPost Physics Codebases 2022}} [\href{https://arxiv.org/abs/2203.11601}{arXiv}] [\href{https://pythia.org}{code}]
+
 \textbf{Event Generation and Statistical Sampling for Physics with Deep Generative Models and a Density Information Buffer} \\
 S. Otten, S. Caron, W. de Swart, M. van Beekveld, L. Hendriks, C. van Leeuwen, D. Podareanu, R. Ruiz de Austri, \underline{R. Verheyen}, 
 \href{https://www.nature.com/articles/s41467-021-22616-z}{\underline{Nature Communications 2021}} [\href{https://arxiv.org/abs/1901.00875}{arXiv}]
@@ -213,59 +234,23 @@ S. Otten, S. Caron, W. de Swart, M. van Beekveld, L. Hendriks, C. van Leeuwen, D
 B. Stienen, \underline{R. Verheyen}, 
 \href{https://scipost.org/10.21468/SciPostPhys.10.2.038}{\underline{SciPost Physics 2021}} [\href{https://arxiv.org/pdf/2011.13445.pdf}{arXiv}] [\href{https://github.com/rbvh/PhaseSpaceAutoregressiveFlow}{code}]
 
-
-
-\underline{\Large{Monte Carlo generator development}} \\[5pt]
-\textbf{A Comprehensive Guide to the Physics and Usage of PYTHIA 8.3} \\
-C. Bierlich, S. Chakraborty, N. Desai, L. Gellersen, I. Helenius, P. Ilten, L. Lönnblad, S. Mrenna, S. Prestel, C. Preuss, T. Sjöstrand, P. Skands, M. Utheim, \underline{R. Verheyen}, \\
-\href{https://scipost.org/SciPostPhysCodeb.8-r8.3}{\underline{SciPost Physics Codebases 2022}} [\href{https://arxiv.org/abs/2203.11601}{arXiv}] [\href{https://pythia.org}{code}]
-
-\textbf{PanScales Parton Showers for Hadron Collisions: Formulation and Fixed-order studies} \\
-M. van Beekveld, S. Ferrario Ravasio, G. Salam, A. Soto-Ontoso, G. Soyez, \underline{R. Verheyen}, \\
-\href{https://link.springer.com/article/10.1007/JHEP11(2022)019https://arxiv.org/abs/2205.02237}{\underline{Journal of High Energy Physics 2022}} [\href{https://arxiv.org/abs/2205.02237}{arXiv}]
-
-\textbf{Spin Correlations in Final-state Parton Showers and Jet Observables} \\
-A. Karlberg, G. Salam, L. Scyboz, \underline{R. Verheyen}, \\
-\href{https://link.springer.com/article/10.1140/epjc/s10052-021-09378-0}{\underline{The European Physical Journal 2021}} [\href{https://arxiv.org/pdf/2103.16526.pdf}{arXiv}]
-
 \textbf{Competing Sudakov Veto Algorithms} \\
 R. Kleiss, \underline{R. Verheyen},
 \href{https://link.springer.com/article/10.1140/epjc/s10052-016-4231-5}{\underline{The European Physical Journal 2016}} [\href{https://arxiv.org/pdf/1605.09246.pdf}{arXiv}] [\href{https://github.com/rbvh/Veto-Algorithm-Toy-Shower}{code}]
 
 
-
-% \textbf{The Dark Machines Anomaly Score Challenge: Benchmark Data and Model Independent Event Classification for the Large Hadron Collider} \\
-% T. Aarrestad, M. van Beekveld, M. Bona, A. Boveia, S. Caron, J.Davies, A. De Simone, C. Doglioni, J. M. Duarte, A. Farbin, H. Gupta, L. Hendriks, L. Heinrich, J. Howarth, P. Jawahar, A. Jueid, J. Lastow, A. Leinweber, J. Mamuzic, E. Merényi, A. Morandini, P. Moskvitina, C. Nellist, J.Ngadiuba, B. Ostdiek, M. Pierini, B. Ravina, R. Ruiz de Austri, S. Sekmen, M. Touranakou, M. Vaškevičiūte, R. Vilalta, J. R. Vlimant, \underline{R. Verheyen}, M. White, E. Wulff, E. Wallin, K. A. Wozniak, Z. Zhang, \\
-% \href{https://scipost.org/10.21468/SciPostPhys.12.1.043}{\underline{SciPost Physics 2022}} [\href{https://arxiv.org/pdf/2105.14027.pdf}{arXiv}] [\href{https://github.com/bostdiek/DarkMachines-UnsupervisedChallenge}{code}]
 %----------------------------------------------------------------------------------------
 %	TALKS
 %----------------------------------------------------------------------------------------
 \section{Selected talks}
 More complete list \href{https://rbvh.github.io/}{here}.
 
-\underline{HP2 conference, Newcastle, United Kingdom} Invited talk \hfill  Sep 2022 \\[1.75pt]
-\textbf{An overview of the PanScales parton showers}  \\[3.5pt]
+\underline{Inter-experimental Machine Learning meeting, CERN} Invited talk \hfill Dec 2022 \\[1.75pt]
+\textbf{Normalizing flows for event generation and anomaly detection at the LHC} \\[3.5pt]
 \underline{Heidelberg University, Germany} Invited seminar \hfill Jun 2022 \\[1.75pt]
 \textbf{Event Generation and Density Estimation with Surjective Normalizing Flows}  \\[3.5pt]
-\underline{Pittsburgh Loopfest conference, United States} Invited talk \hfill May 2022 \\[1.75pt]
-\textbf{The PanScales parton showers for hadron collisions}  \\[3.5pt]
-\underline{University of Jyväskylä, Finland} PYTHIA public seminar \hfill May 2020 \\[1.75pt]
-\textbf{Electroweak Corrections in the Vincia Parton Shower}  \\[3.5pt]
 \underline{Monash University, Australia} Invited talk \hfill Mar 2019 \\[1.75pt]
 \textbf{Event Generation and Statistical Sampling with Deep Generative Models} 
-
-
-%----------------------------------------------------------------------------------------
-%	OTHER PROJECTS
-%----------------------------------------------------------------------------------------
-\section{Other projects}
-\begin{itemize}
-    \setlength\itemsep{-.5em}
-    \item[-] Contributed to the development of an ML algorithm for fast diagnosis of SARS-CoV-2, \\ led to publication in \href{https://www.degruyter.com/document/doi/10.1515/cclm-2020-0593/html}{Clinical Chemistry and Laboratory Medicine}.
-    \item[-] Development of graph generative models for particle physics with F. Dreyer (ongoing).
-    \item[-] Normalizing flows for Monte Carlo integration (ongoing).
-\end{itemize}
-
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -275,6 +260,7 @@ More complete list \href{https://rbvh.github.io/}{here}.
 ML frameworks & \normalsize{PyTorch, TensorFlow, dgl} \\
 Programming languages & \normalsize{C++, Python (NumPy, Pandas, Matplotlib, SciPy), Mathematica} \\
 Software & \normalsize{LaTeX, git, svn, slurm}  \\
+Languages & \normalsize{Dutch (native), English (fluent)}
 \end{tabularx}
 
 \vfill
