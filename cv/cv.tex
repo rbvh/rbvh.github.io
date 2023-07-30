@@ -120,9 +120,9 @@
 \href{https://github.com/rbvh}{\raisebox{-0.05\height}\faGithub\ rbvh} \ $|$ \ 
 \href{https://www.linkedin.com/in/rob-verheyen-55955a97/}{\raisebox{-0.05\height}\faLinkedin\ rob-verheyen} \ $|$ \ 
 \href{https://rbvh.github.io/}{\raisebox{-0.05\height}\faGlobe \ rbvh.github.io} \ $|$ \ 
-\href{mailto:r.verheyen@ucl.ac.uk}{\raisebox{-0.05\height}\faEnvelope \ r.verheyen@ucl.ac.uk} \ $|$ \ 
+\href{mailto:rob@deconcern.nl}{\raisebox{-0.05\height}\faEnvelope \ rob@deconcern.nl} \ $|$ \ 
 \href{tel:+31 683095896}{\raisebox{-0.05\height}\faMobile \ +31 683095896} \\ [2pt]
-Oxford, United Kingdom \\
+Nijmegen, The Netherlands \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -132,26 +132,37 @@ Oxford, United Kingdom \\
 %Interests/ Keywords/ Summary
 \section{Knowledge \& Research Interests}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-    \item[-] \textbf{Machine learning in particle physics} \\ 
-    Anomaly detection and event classification with graph neural networks and transformers
-    \item[-] \textbf{Deep generative models} \\
+    \item[-] \textbf{Deep Generative Models} \\
     Normalizing flows; Variational autoencoders; Variational inference; Applications in particle physics
+    \item[-] \textbf{Machine Learning in Particle Physics} \\ 
+    Anomaly detection and event classification with graph neural networks and transformers
     \item[-] \textbf{Computing} \\
-    Monte Carlo techniques; High-performance computing; Algorithmic efficiency
+    Monte Carlo techniques; High-performance computing; Algorithm optimization
 \end{itemize}
 
 %Experience
 \section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Co-Owner \& Data Scientist}  & \hfill Jan 2023 - present \\[3.75pt]
+    \href{https://www.deconcern.nl/}{\underline{Deconcern}}, The Netherlands \\ [3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+            \item[-] Development of multimodal document understanding models to automate legislative \\ audits of companies that use hazardous chemical compounds.
+            \item[-] Solely responsible for the complete pipeline of data collection and preprocessing, model \\ development, training and deployment on cloud services like AWS and Azure. 
+        \end{itemize}
+    \end{minipage}} 
+\end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Postdoctoral researcher} Theoretical high energy physics & \hfill Oct 2019 - present \\[3.75pt]
+\textbf{Postdoctoral Researcher} Theoretical high energy physics & \hfill Oct 2019 - Dec 2022 \\[3.75pt]
 \href{https://www.hep.ucl.ac.uk/}{\underline{University College London}} / \href{https://www.physics.ox.ac.uk/research/subdepartment/particle-physics}{\underline{University of Oxford (visitor)}}, United Kingdom \\ [3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
-        \item[-] Author and developer in the \href{https://https://gsalam.web.cern.ch/gsalam/panscales/}{PanScales} collaboration, a project involving leading theorists \\that aim to improve theoretical accuracy and understanding of Monte Carlo event generators.
+        \item[-] Author and developer in the \href{https://gsalam.web.cern.ch/gsalam/panscales/}{PanScales} collaboration, a project involving leading QCD \\ theorists that aim to improve theoretical accuracy of Monte Carlo event generators.
         \item[-] Research on deep generative models, anomaly detection and event classification with \\ models such as normalizing flows, graph neural networks and transformers.
-        \item[-] Experience with high-performance computing and algorithmic efficiency.
+        \item[-] Experience with high-performance computing and algorithmic optimization.
     \end{itemize}
 \end{minipage}} 
 \end{tabularx}
@@ -161,13 +172,13 @@ Oxford, United Kingdom \\
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l  r@{}}	
-\textbf{PhD} Theoretical high energy physics & \hfill 2015 - 2019 \\ 
+\textbf{PhD} Theoretical high energy physics & \hfill 2015 - Mar 2020 \\ 
 \href{https://www.ru.nl/highenergyphysics/}{\underline{Radboud University Nijmegen}}, the Netherlands \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[b]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
         \item[-] Current author and developer in the \href{https://pythia.org}{PYTHIA} collaboration, the leading particle physics \\ Monte Carlo event generator and the most widely-used and cited software in the field.
-        \item[-] Research on deep generative models for particle collision events, a new and emerging \\ field at the time.
+        \item[-] Research on deep generative models for event generation for the LHC.
     \end{itemize}
 \end{minipage}} \\ [5pt]
 
@@ -183,7 +194,7 @@ Oxford, United Kingdom \\
 \textbf{BsC} Physics and Astronomy (\emph{Cum laude/with honors}) & \hfill 2009 - 2013 \\
 \href{https://www.ru.nl/highenergyphysics/}{\underline{Radboud University Nijmegen}}, the Netherlands \\[3.75pt]
 \end{tabularx}
-
+\newpage
 %----------------------------------------------------------------------------------------
 %	OTHER PROJECTS
 %----------------------------------------------------------------------------------------
@@ -192,19 +203,16 @@ Oxford, United Kingdom \\
     % \setlength\itemsep{-.5em}
     \item[-] Autoregressive normalizing flows for sampling particle physics collision events with weighted training (with B. Stienen) [\href{https://github.com/rbvh/PhaseSpaceAutoregressiveFlow}{code}].
     \item[-] Surjective transforms in normalizing flows for sampling and anomaly detection in particle physics, with the goal of handling permutation invariance, varying number of objects and mixed discrete-continuous features [\href{https://github.com/rbvh/surflows}{code}].
-    \item[-] Development of efficient Monte Carlo algorithms for branching processes in particle physics [\href{https://github.com/rbvh/Veto-Algorithm-Toy-Shower}{code}].
     \item[-] Contributed to the development of an ML algorithm for fast diagnosis of SARS-CoV-2, \\ led to publication in \href{https://www.degruyter.com/document/doi/10.1515/cclm-2020-0593/html}{Clinical Chemistry and Laboratory Medicine}.
-    \item[-] Graph generative models for particle physics with F. Dreyer (ongoing).
-    \item[-] Normalizing flows for Monte Carlo integration (ongoing).
 \end{itemize}
 
-\newpage
+
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{Selected publications}
-Full list of 24 publications on \href{https://inspirehep.net/authors/1777870?ui-citation-summary=true}{Inspire} or \href{https://scholar.google.com/citations?user=MRTAm7UAAAAJ&hl=en&oi=ao}{Google Scholar}
+Full list of 25 publications on \href{https://inspirehep.net/authors/1777870?ui-citation-summary=true}{Inspire} or \href{https://scholar.google.com/citations?user=MRTAm7UAAAAJ&hl=en&oi=ao}{Google Scholar}
 
 \textbf{Climbing four tops with graph networks, transformers and pairwise features} \\
 L. Builtjes, S. Caron, P. Moskvitina, C. Nellist, R. Ruiz de Austri, \underline{R. Verheyen}, Z. Zhang,
@@ -225,6 +233,10 @@ T. Aarrestad et al. \\
 \textbf{A Comprehensive Guide to the Physics and Usage of PYTHIA 8.3} \\
 C. Bierlich, S. Chakraborty, N. Desai, L. Gellersen, I. Helenius, P. Ilten, L. Lönnblad, S. Mrenna, S. Prestel, C. Preuss, T. Sjöstrand, P. Skands, M. Utheim, \underline{R. Verheyen}, \\
 \href{https://scipost.org/SciPostPhysCodeb.8-r8.3}{\underline{SciPost Physics Codebases 2022}} [\href{https://arxiv.org/abs/2203.11601}{arXiv}] [\href{https://pythia.org}{code}]
+
+\textbf{Spin Correlations in Final-state Parton Showers and Jet Observables} \\
+A. Karlberg, G. Salam, L. Scyboz, \underline{R. Verheyen}, \\
+\href{https://link.springer.com/article/10.1140/epjc/s10052-021-09378-0}{\underline{The European Physical Journal 2021}} [\href{https://arxiv.org/pdf/2103.16526.pdf}{arXiv}]
 
 \textbf{Event Generation and Statistical Sampling for Physics with Deep Generative Models and a Density Information Buffer} \\
 S. Otten, S. Caron, W. de Swart, M. van Beekveld, L. Hendriks, C. van Leeuwen, D. Podareanu, R. Ruiz de Austri, \underline{R. Verheyen}, 
@@ -273,10 +285,6 @@ R. Kleiss, \underline{R. Verheyen},
 % M. van Beekveld, S. Ferrario Ravasio, G. Salam, A. Soto-Ontoso, G. Soyez, \underline{R. Verheyen}, \\
 % \href{https://link.springer.com/article/10.1007/JHEP11(2022)019https://arxiv.org/abs/2205.02237}{\underline{Journal of High Energy Physics 2022}} [\href{https://arxiv.org/abs/2205.02237}{arXiv}]
 
-% \textbf{Spin Correlations in Final-state Parton Showers and Jet Observables} \\
-% A. Karlberg, G. Salam, L. Scyboz, \underline{R. Verheyen}, \\
-% \href{https://link.springer.com/article/10.1140/epjc/s10052-021-09378-0}{\underline{The European Physical Journal 2021}} [\href{https://arxiv.org/pdf/2103.16526.pdf}{arXiv}]
-
 % \textbf{Competing Sudakov Veto Algorithms} \\
 % R. Kleiss, \underline{R. Verheyen},
 % \href{https://link.springer.com/article/10.1140/epjc/s10052-016-4231-5}{\underline{The European Physical Journal 2016}} [\href{https://arxiv.org/pdf/1605.09246.pdf}{arXiv}] [\href{https://github.com/rbvh/Veto-Algorithm-Toy-Shower}{code}]
@@ -285,22 +293,22 @@ R. Kleiss, \underline{R. Verheyen},
 %----------------------------------------------------------------------------------------
 %	TALKS
 %----------------------------------------------------------------------------------------
-\section{Selected talks}
-More complete list \href{https://rbvh.github.io/}{here}.
+% \section{Selected talks}
+% More complete list \href{https://rbvh.github.io/}{here}.
 
-\underline{Inter-experimental Machine Learning meeting, CERN} Invited talk \hfill Dec 2022 \\[1.75pt]
-\textbf{Normalizing flows for event generation and anomaly detection at the LHC} \\[3.5pt]
-\underline{Heidelberg University, Germany} Invited seminar \hfill Jun 2022 \\[1.75pt]
-\textbf{Event Generation and Density Estimation with Surjective Normalizing Flows}  \\[3.5pt]
-\underline{Monash University, Australia} Invited talk \hfill Mar 2019 \\[1.75pt]
-\textbf{Event Generation and Statistical Sampling with Deep Generative Models} 
+% \underline{Inter-experimental Machine Learning meeting, CERN} Invited talk \hfill Dec 2022 \\[1.75pt]
+% \textbf{Normalizing flows for event generation and anomaly detection at the LHC} \\[3.5pt]
+% \underline{Heidelberg University, Germany} Invited seminar \hfill Jun 2022 \\[1.75pt]
+% \textbf{Event Generation and Density Estimation with Surjective Normalizing Flows}  \\[3.5pt]
+% \underline{Monash University, Australia} Invited talk \hfill Mar 2019 \\[1.75pt]
+% \textbf{Event Generation and Statistical Sampling with Deep Generative Models} 
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-ML frameworks & \normalsize{PyTorch, TensorFlow, dgl} \\
+ML frameworks & \normalsize{PyTorch, TensorFlow, JAX, dgl} \\
 Programming languages & \normalsize{C++, Python (NumPy, Pandas, Matplotlib, SciPy), Mathematica} \\
 Software & \normalsize{LaTeX, git, svn, slurm}  \\
 Languages & \normalsize{Dutch (native), English (fluent)}
