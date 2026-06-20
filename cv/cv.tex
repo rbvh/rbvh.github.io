@@ -119,10 +119,8 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \huge{Rob Verheyen} \\[2pt]
 \href{mailto:robverheyen@gmail.com}{robverheyen@gmail.com} \ $|$ \
-\href{tel:+31683095896}{+31 683095896} \ $|$ \
-Nijmegen, The Netherlands \\[2pt]
 \href{https://github.com/rbvh}{github.com/rbvh} \ $|$ \
-\href{https://www.linkedin.com/in/rob-verheyen-55955a97/}{linkedin.com/in/rob-verheyen-55955a97} \\[3pt]
+Nijmegen, The Netherlands \\[3pt]
 Machine learning engineer focused on production NLP, document AI, scientific ML and deployed cloud systems
 \end{tabularx}
 
@@ -130,38 +128,43 @@ Machine learning engineer focused on production NLP, document AI, scientific ML 
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-\section{Technical Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-ML \& NLP & \normalsize{NLP, document AI, OCR, named entity recognition, relation extraction, encoder-only transformers, continued pretraining, fine-tuning, Hugging Face, graph neural networks, molecular property prediction, normalizing flows, anomaly detection} \\
-Engineering & \normalsize{Python, C++, PyTorch, TensorFlow, JAX, DGL, FastAPI, REST APIs, Docker, AWS, Azure, GCP, Linux, git, SLURM} \\
-Data \& science & \normalsize{NumPy, Pandas, SciPy, Matplotlib, Monte Carlo methods, variational inference, high-performance computing, LaTeX} \\
-Languages & \normalsize{Dutch (native), English (fluent)}
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+\textbf{Programming \& frameworks:} Python, PyTorch, Hugging Face, C++, JAX, TensorFlow, DGL \\
+\textbf{ML expertise:} document AI, LLMs, transformers, GNNs, CNNs, normalizing flows \\
+\textbf{Cloud \& deployment:} Docker, ONNX, NVIDIA Triton, Azure, GCP, Weights \& Biases, Prometheus \\
+\textbf{Scientific computing:} Monte Carlo methods, probabilistic modelling, HPC, parallel computing \\
+\textbf{Languages:} Dutch (native), English (fluent) \\
 \end{tabularx}
 
 %Experience
 \section{Work Experience}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Machine Learning Engineer}  & \hfill Jan 2023 -- June 2026 \\[3.75pt]
-    \href{https://www.deconcern.nl/}{\underline{Deconcern}}, The Netherlands \\ [3.75pt]
+    \href{https://www.deconcern.nl/}{Deconcern}, The Netherlands \\ [3.75pt]
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
-            \item[-] Built a production document-AI pipeline for structured regulatory documents, including OCR/data processing, encoder-only transformer continued pretraining and fine-tuning, named entity recognition and relation extraction.
-            \item[-] Processed approximately 150k documents and trained domain models with F1 scores above 97\%; the resulting system is used in practice by a large share of Dutch environmental agencies (omgevingsdiensten) for hazardous-substance audits.
-            \item[-] Owned the full ML lifecycle from problem framing to deployed system: dataset and annotation strategy, training, evaluation, FastAPI/REST services, Dockerized inference and cloud deployment on AWS, Azure and GCP.
-            \item[-] Developed graph neural networks for molecular property prediction, including ZZS classification and LC50 values; mentored a junior team member in ML development workflows.
+            \item[-] Built the core ML system underpinning Deconcern's business, processing over 150k documents and supporting hazardous-substance audits across a large share of Dutch environmental agencies
+            \item[-] Owned the full ML lifecycle from problem framing and annotation strategy through model architecture design, training, evaluation and production deployment on Azure and GCP
+            \item[-] Designed encoder-only models for named entity recognition and relation extraction, adding 2D layout awareness through continued pretraining and achieving F1 scores above 97\% after fine-tuning
+            \item[-] Built schema-constrained LLM systems on Vertex AI for annotation and difficult-document fallback
+            \item[-] Integrated a lightweight convolutional neural network into production for hazard-symbol detection
+            \item[-] Developed graph neural networks for toxicity prediction, improving balanced accuracy from 84\% to 91\% over the Dutch public-health agency's baseline for high-concern substance classification
+            \item[-] Mentored a junior ML engineer in model development and production workflows
         \end{itemize}
     \end{minipage}} 
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Postdoctoral Researcher, Machine Learning \& Theoretical Physics} & \hfill Oct 2019 -- Dec 2022 \\[2pt]
-\href{https://www.hep.ucl.ac.uk/}{\underline{University College London}} / \href{https://www.physics.ox.ac.uk/research/subdepartment/particle-physics}{\underline{University of Oxford}}, United Kingdom \\ [3.75pt]
+\href{https://www.hep.ucl.ac.uk/}{University College London} / \href{https://www.physics.ox.ac.uk/research/subdepartment/particle-physics}{University of Oxford}, United Kingdom \\ [3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
-        \item[-] Developed ML methods for event generation, density estimation, anomaly detection and classification using normalizing flows, graph neural networks and transformers.
-        \item[-] Built scientific software in the \href{https://gsalam.web.cern.ch/gsalam/panscales/}{PanScales} collaboration and worked on numerical algorithms, high-performance computing and optimization for expensive simulation workloads.
+        \item[-] Developed and published ML methods for density estimation, anomaly detection and classification using normalizing flows, graph neural networks and transformers
+        \item[-] Developed numerical algorithms and optimized scientific software in the \href{https://gsalam.web.cern.ch/gsalam/panscales/}{PanScales} collaboration
+        \item[-] Delivered 14+ technical talks at international conferences and invited seminars
     \end{itemize}
 \end{minipage}} 
 \end{tabularx}
@@ -172,23 +175,24 @@ Languages & \normalsize{Dutch (native), English (fluent)}
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}X r@{}}	
 \textbf{PhD, Theoretical High Energy Physics}, Radboud University & \hfill 2015 -- 2020 \\
-\multicolumn{2}{@{}p{\linewidth}@{}}{\hspace{0.4em}- Author role in \href{https://pythia.org}{Pythia}, a C++ Monte Carlo generator used by thousands of physicists.} \\
-\multicolumn{2}{@{}p{\linewidth}@{}}{\hspace{0.4em}- Collaborated internationally on development, numerical validation and technical communication.} \\
-\textbf{MSc, Theoretical High Energy Physics}, Radboud University, \emph{summa cum laude} & \hfill 2013 -- 2015 \\
-\textbf{BSc, Physics and Astronomy}, Radboud University, \emph{cum laude} & \hfill 2009 -- 2013
+\multicolumn{2}{@{}p{\linewidth}@{}}{\hspace{0.4em}- Author role in \href{https://pythia.org}{Pythia}, a C++ Monte Carlo generator used by thousands of physicists} \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\hspace{0.4em}- Collaborated internationally on development, numerical validation and technical communication} \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\hspace{0.4em}- Taught undergraduate physics tutorials from BSc through PhD and assisted with student supervision} \\
+\textbf{MSc, Theoretical High Energy Physics}, Radboud University, summa cum laude & \hfill 2013 -- 2015 \\
+\textbf{BSc, Physics and Astronomy}, Radboud University, cum laude & \hfill 2009 -- 2013
 \end{tabularx}
 \section{Selected Research}
 \textbf{Single-author research}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
-    \item[-] \textbf{\href{https://arxiv.org/abs/2606.14854}{Event Generation with Parallel Langevin Sampling and Learned Stein Diagnostics}} [\href{https://github.com/rbvh/ula_stein_evt_gen}{code}].\\
-    Parallel Markov chain Monte Carlo and learned diagnostics for expensive density sampling.
-    \item[-] \textbf{\href{https://scipost.org/10.21468/SciPostPhys.13.3.047}{Surjective Normalizing Flows for Event Generation and Density Estimation}} [\href{https://github.com/rbvh/surflows}{code}].\\
-    Normalizing flows for variable-size, permutation-invariant and mixed data.
+    \item[-] \textbf{\href{https://arxiv.org/abs/2606.14854}{Event Generation with Parallel Langevin Sampling and Learned Stein Diagnostics}} [\href{https://github.com/rbvh/ula_stein_evt_gen}{code}]\\
+    Parallel Markov chain Monte Carlo and learned diagnostics for expensive density sampling
+    \item[-] \textbf{\href{https://scipost.org/10.21468/SciPostPhys.13.3.047}{Surjective Normalizing Flows for Event Generation and Density Estimation}} [\href{https://github.com/rbvh/surflows}{code}]\\
+    Normalizing flows for variable-size, permutation-invariant and mixed data
 \end{itemize}
 \textbf{Collaborative research}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt]
-    \item[-] Scientific simulation with Variational Autoencoders [\href{https://www.nature.com/articles/s41467-021-22616-z}{Nature Communications}], Normalizing Flows [\href{https://arxiv.org/abs/2011.13445}{arXiv}].
-    \item[-] Anomaly detection and classification with Graph Neural Networks and Transformers [\href{https://arxiv.org/abs/2106.10164}{arXiv}] [\href{https://arxiv.org/pdf/2211.05143.pdf}{arXiv}]
+    \item[-] Scientific simulation with variational autoencoders [\href{https://www.nature.com/articles/s41467-021-22616-z}{Nature Communications}], normalizing flows [\href{https://arxiv.org/abs/2011.13445}{arXiv}]
+    \item[-] Anomaly detection and classification with graph neural networks and transformers [\href{https://arxiv.org/abs/2106.10164}{arXiv}] [\href{https://arxiv.org/pdf/2211.05143.pdf}{arXiv}]
 \end{itemize}
 
 \end{document}
