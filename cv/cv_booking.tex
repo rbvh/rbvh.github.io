@@ -1,0 +1,108 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage{xcolor}
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[unicode, draft=false]{hyperref}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\renewcommand\tabularxcolumn[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{7pt}{5pt}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\begin{document}
+\fontsize{10.5pt}{11.8pt}\selectfont
+\RaggedRight
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\parskip}{3pt}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\huge{Rob Verheyen} \\[2pt]
+\href{mailto:robverheyen@gmail.com}{robverheyen@gmail.com} \ $|$ \
+\href{https://github.com/rbvh}{github.com/rbvh} \ $|$ \
+\href{https://scholar.google.com/citations?user=MRTAm7UAAAAJ}{Google Scholar} \ $|$ \
+Nijmegen, The Netherlands \\[3pt]
+Theoretical physics PhD and machine learning scientist with experience in research and production ML
+\end{tabularx}
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+\textbf{Machine learning:} Transformers, NLP, LLM systems, multimodal document models, computer vision, GNNs, normalizing flows, VAEs \\
+\textbf{Programming \& frameworks:} Python, PyTorch, JAX, Hugging Face, C++, TensorFlow, DGL \\
+\textbf{Production ML:} ONNX, NVIDIA Triton, Docker, Azure, GCP, Weights \& Biases, Prometheus \\
+\textbf{Scientific computing:} Probabilistic modelling, Monte Carlo methods, HPC, parallel computing \\
+\textbf{Languages:} Dutch (native), English (fluent) \\
+\end{tabularx}
+
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+    \textbf{Machine Learning Engineer} & \hfill Jan 2023 -- Jun 2026 \\[3.75pt]
+    \href{https://www.deconcern.nl/}{Deconcern}, The Netherlands \\ [3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=1pt]
+            \item[-] Built the core ML system underpinning the business, processing over 150k documents for hazardous-substance audits across a large share of Dutch environmental agencies
+            \item[-] Owned the full ML lifecycle from problem framing and annotation strategy through model architecture, training, evaluation and production deployment on Azure and GCP
+            \item[-] Fine-tuned multimodal document transformers combining text, layout and visual features for named entity recognition and relation extraction
+            \item[-] Added 2D layout awareness to encoder-only models through continued pretraining, achieving F1 scores above 97\% after fine-tuning
+            \item[-] Built schema-constrained LLM systems on Vertex AI for annotation and difficult-document fallback
+            \item[-] Trained and deployed a lightweight CNN for visual hazard-symbol detection in production
+            \item[-] Deployed and monitored models using ONNX, NVIDIA Triton, Docker and Prometheus
+            \item[-] Developed graph neural networks for toxicity prediction, improving balanced accuracy from 84\% to 91\% over the Dutch public-health agency's baseline
+            \item[-] Mentored a junior ML engineer in model development and production workflows
+        \end{itemize}
+    \end{minipage}}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{Postdoctoral Researcher, Machine Learning \& Theoretical Physics} & \hfill Oct 2019 -- Dec 2022 \\[2pt]
+\href{https://www.hep.ucl.ac.uk/}{University College London} / \href{https://www.physics.ox.ac.uk/research/subdepartment/particle-physics}{University of Oxford}, United Kingdom \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=1pt]
+        \item[-] Designed and executed end-to-end ML research on generative modelling, density estimation, anomaly detection and classification, resulting in peer-reviewed publications and open-source implementations
+        \item[-] Built C++ Monte Carlo algorithms and distributed infrastructure for high-precision numerical simulation in the open-source \href{https://gitlab.com/panscales/panscales-0.X}{PanScales} framework
+        \item[-] Presented research at international conferences and invited seminars
+    \end{itemize}
+\end{minipage}}
+\end{tabularx}
+
+\section{Machine Learning Research \& Software}
+Author of 24 peer-reviewed journal publications; selected work below
+
+\textbf{Single-author research}
+\begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=1pt]
+    \item[-] \textbf{\href{https://arxiv.org/abs/2606.14854}{Event Generation with Parallel Langevin Sampling and Learned Stein Diagnostics}} [\href{https://github.com/rbvh/ula_stein_evt_gen}{code}]\\
+    Parallel Markov chain Monte Carlo and learned diagnostics for expensive density sampling
+    \item[-] \textbf{\href{https://scipost.org/10.21468/SciPostPhys.13.3.047}{Surjective Normalizing Flows for Event Generation and Density Estimation}} [\href{https://github.com/rbvh/surflows}{code}]\\
+    Normalizing flows for variable-size, permutation-invariant and mixed data
+\end{itemize}
+\textbf{Collaborative research}
+\begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=1pt]
+    \item[-] Scientific simulation with variational autoencoders [\href{https://www.nature.com/articles/s41467-021-22616-z}{Nature Communications}] and normalizing flows [\href{https://scipost.org/10.21468/SciPostPhys.10.2.038}{SciPost}]
+    \item[-] Anomaly detection and classification with graph neural networks and transformers [\href{https://scipost.org/10.21468/SciPostPhys.12.2.077}{SciPost}] [\href{https://scipost.org/10.21468/SciPostPhys.19.1.028}{SciPost}]
+\end{itemize}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{PhD, Theoretical High Energy Physics}, Radboud University & \hfill 2015 -- 2020 \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\hangindent=1em\hangafter=1\hspace{0.4em}- Member of the international \href{https://pythia.org}{Pythia} author team developing a widely used C++ Monte Carlo generator} \\
+\textbf{MSc, Theoretical High Energy Physics}, Radboud University, summa cum laude & \hfill 2013 -- 2015 \\
+\textbf{BSc, Physics and Astronomy}, Radboud University, cum laude & \hfill 2009 -- 2013
+\end{tabularx}
+
+\end{document}
